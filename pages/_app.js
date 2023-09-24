@@ -1,11 +1,13 @@
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+// pages/_app.js
 
-const activeChain = "goerli";
+import { ThirdwebProvider } from "@thirdweb-dev/react";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThirdwebProvider activeChain={activeChain}>
-      <Component {...pageProps} />
+    <ThirdwebProvider activeChain="goerli">
+      <div>
+        <Component {...pageProps} />
+      </div>
     </ThirdwebProvider>
   );
 }

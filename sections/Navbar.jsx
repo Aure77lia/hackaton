@@ -12,7 +12,7 @@ export const Navbar = () => {
 
     return (
         <ThirdwebProvider activeChain={activeChain}>
-            <nav className="w-full h-24 fixed flex justify-around items-center top-0 text-white">
+            <nav className="w-full h-24 fixed flex justify-around items-center top-0 text-white z-10">
                 <Link href="/">Home</Link>
                 <ConnectWallet theme="dark" />
                 <Link href="/portal" className=" bg-indigo-600 p-2 px-4 rounded">Log In</Link>
